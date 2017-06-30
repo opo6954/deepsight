@@ -1,0 +1,1 @@
+Dir /b *6.3-gd.lib > libDebug.txt
