@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{581077C6-19CD-3582-A348-4B06818AE9A8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\f0ed346aeb255836be5f81810e24a01f\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\bin\cmake.exe -HC:/Users/ChurWoong/Desktop/lsd_slam_noros-master -BC:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/f0ed346aeb255836be5f81810e24a01f/generate.stamp.rule;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLEW.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig-version.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-debug.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCXXCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeRCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeSystem.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\LsdSlamDependencies_Config.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamConfig.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamDependencies.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamUtil.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\cmake_uninstall.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\modules\FindG2O.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths_and_run_vc.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\FindOpenCV.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\bin\cmake.exe -HC:/Users/ChurWoong/Desktop/lsd_slam_noros-master -BC:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/f0ed346aeb255836be5f81810e24a01f/generate.stamp.rule;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLEW.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig-version.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-debug.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCXXCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeRCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeSystem.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\LsdSlamDependencies_Config.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamConfig.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamDependencies.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamUtil.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\cmake_uninstall.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\modules\FindG2O.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths_and_run_vc.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\FindOpenCV.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\bin\cmake.exe -HC:/Users/ChurWoong/Desktop/lsd_slam_noros-master -BC:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/f0ed346aeb255836be5f81810e24a01f/generate.stamp.rule;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLEW.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig-version.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-debug.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCXXCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeRCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeSystem.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\LsdSlamDependencies_Config.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamConfig.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamDependencies.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamUtil.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\cmake_uninstall.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\modules\FindG2O.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths_and_run_vc.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\FindOpenCV.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\bin\cmake.exe -HC:/Users/ChurWoong/Desktop/lsd_slam_noros-master -BC:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/f0ed346aeb255836be5f81810e24a01f/generate.stamp.rule;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindBoost.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLEW.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindGLUT.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindOpenGL.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\FindPackageMessage.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\apps\slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig-version.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVConfig.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-debug.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules-release.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\x86\vc12\lib\OpenCVModules.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeCXXCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeRCCompiler.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CMakeSystem.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\LsdSlamDependencies_Config.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamConfig.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamDependencies.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\LsdSlamUtil.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\cmake_uninstall.cmake.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\cmake\modules\FindG2O.cmake;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\scripts\set_paths_and_run_vc.bat.in;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\CMakeLists.txt;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\FindOpenCV.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\generate.stamp;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

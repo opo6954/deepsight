@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F20312AF-3348-30DA-BD27-4B9FA027EC6E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>openFABMAP</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../lib</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openFABMAP.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">openFABMAP_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../lib</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openFABMAP.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">openFABMAP</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">openFABMAP.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">openFABMAP_s</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">openFABMAP.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">openFABMAP_rd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../lsd_slam;../../../build/3rd party/boost_1_56_0;../../../build/3rd party/opencv/include;../../../build/3rd party/opencv/include/opencv;../../../build/3rd party/g2o/include;../../../build/3rd party/g2o/include/EXTERNAL/csparse;../../../thirdparty/eigen-3.2.1;../../../thirdparty/Sophus;../../../thirdparty/openFabMap/include;../../../thirdparty/dirent-1.20.1/include;../../../lsd_slam/depth_estimation;../../../lsd_slam/global_mapping;../../../lsd_slam/io_wrapper;../../../lsd_slam/model;../../../lsd_slam/tracking;../../../lsd_slam/util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LsdSlam_DIR="D:\@SLAM\lsd_slam_noros-master";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -march=native %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>../../../lsd_slam;../../../build/3rd party/boost_1_56_0;../../../build/3rd party/opencv/include;../../../build/3rd party/opencv/include/opencv;../../../build/3rd party/g2o/include;../../../build/3rd party/g2o/include/EXTERNAL/csparse;../../../thirdparty/eigen-3.2.1;../../../thirdparty/Sophus;../../../thirdparty/openFabMap/include;../../../thirdparty/dirent-1.20.1/include;../../../lsd_slam/depth_estimation;../../../lsd_slam/global_mapping;../../../lsd_slam/io_wrapper;../../../lsd_slam/model;../../../lsd_slam/tracking;../../../lsd_slam/util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG%3B;_SECURE_SCL=0;LsdSlam_DIR="D:\@SLAM\lsd_slam_noros-master";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG%3B;_SECURE_SCL=0;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LsdSlam_DIR="C:/Users/ChurWoong/Desktop/lsd_slam_noros-master";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -march=native %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG%3B;_SECURE_SCL=0;LsdSlam_DIR="C:/Users/ChurWoong/Desktop/lsd_slam_noros-master";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG%3B;_SECURE_SCL=0;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\ChurWoong\Desktop\lsd_slam_noros-master;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\lsd_slam;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\boost_1_56_0;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\opencv\include\opencv;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\3rd party\g2o\include\EXTERNAL\csparse;\include\EXTERNAL\csparse;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\eigen-3.2.1;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\Sophus;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\openFabMap\include;C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\thirdparty\dirent-1.20.1\include;C:\OpenCV\2.4.13\x64\vc12\build\include\opencv2;C:\OpenCV\2.4.13\x64\vc12\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\thirdparty\openFabMap\include\openfabmap.hpp" />
+    <ClCompile Include="..\..\..\thirdparty\openFabMap\src\BOWMSCTrainer.cpp" />
+    <ClCompile Include="..\..\..\thirdparty\openFabMap\src\ChowLiuTree.cpp" />
+    <ClCompile Include="..\..\..\thirdparty\openFabMap\src\FabMap.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

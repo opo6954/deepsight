@@ -1,0 +1,343 @@
+The system is: Windows - 10.0.15063 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:23
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdC\CompilerIdC.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "Debug\" 디렉터리를 만들고 있습니다.
+  "Debug\CompilerIdC.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\CompilerIdC.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  "Debug\CompilerIdC.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdC\CompilerIdC.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.60
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/3.4.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:24
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdCXX\CompilerIdCXX.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "Debug\" 디렉터리를 만들고 있습니다.
+  "Debug\CompilerIdCXX.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\CompilerIdCXX.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\3.4.1\CompilerIdCXX\CompilerIdCXX.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.94
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/3.4.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_d4845.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:26
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_d4845.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTC_d4845.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+  "cmTC_d4845.dir\Debug\cmTC_d4845.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_d4845.dir\Debug\cmTC_d4845.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d4845.dir\Debug\\" /Fd"cmTC_d4845.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 18.00.40629
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d4845.dir\Debug\\" /Fd"cmTC_d4845.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_d4845.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_d4845.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_d4845.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_d4845.dir\Debug\testCCompiler.obj
+  cmTC_d4845.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_d4845.exe
+FinalizeBuildStatus:
+  "cmTC_d4845.dir\Debug\cmTC_d4845.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTC_d4845.dir\Debug\cmTC_d4845.tlog\cmTC_d4845.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_d4845.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.88
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_c9765.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:27
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_c9765.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTC_c9765.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+  "cmTC_c9765.dir\Debug\cmTC_c9765.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_c9765.dir\Debug\cmTC_c9765.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c9765.dir\Debug\\" /Fd"cmTC_c9765.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c"
+  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 18.00.40629
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_c9765.dir\Debug\\" /Fd"cmTC_c9765.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c9765.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c9765.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_c9765.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_c9765.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_c9765.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_c9765.exe
+FinalizeBuildStatus:
+  "cmTC_c9765.dir\Debug\cmTC_c9765.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTC_c9765.dir\Debug\cmTC_c9765.tlog\cmTC_c9765.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_c9765.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.64
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_6e61f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:28
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_6e61f.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTC_6e61f.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+  "cmTC_6e61f.dir\Debug\cmTC_6e61f.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_6e61f.dir\Debug\cmTC_6e61f.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_6e61f.dir\Debug\\" /Fd"cmTC_6e61f.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 18.00.40629
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_6e61f.dir\Debug\\" /Fd"cmTC_6e61f.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_6e61f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_6e61f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_6e61f.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_6e61f.dir\Debug\testCXXCompiler.obj
+  cmTC_6e61f.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_6e61f.exe
+FinalizeBuildStatus:
+  "cmTC_6e61f.dir\Debug\cmTC_6e61f.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTC_6e61f.dir\Debug\cmTC_6e61f.tlog\cmTC_6e61f.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_6e61f.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.69
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_3560d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:29
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_3560d.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTC_3560d.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+  "cmTC_3560d.dir\Debug\cmTC_3560d.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_3560d.dir\Debug\cmTC_3560d.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3560d.dir\Debug\\" /Fd"cmTC_3560d.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp"
+  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 18.00.40629
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_3560d.dir\Debug\\" /Fd"cmTC_3560d.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\cmake-3.4.1-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_3560d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_3560d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_3560d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_3560d.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_3560d.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_3560d.exe
+FinalizeBuildStatus:
+  "cmTC_3560d.dir\Debug\cmTC_3560d.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTC_3560d.dir\Debug\cmTC_3560d.tlog\cmTC_3560d.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_3560d.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.67
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_88844.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 버전 12.0.31101.0
+[Microsoft .NET Framework, 버전 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+빌드 시작: 2017-06-21 오후 1:56:30
+1 노드의 "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_88844.vcxproj" 프로젝트(기본 대상)입니다.
+PrepareForBuild:
+  "cmTC_88844.dir\Debug\" 디렉터리를 만들고 있습니다.
+  "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\" 디렉터리를 만들고 있습니다.
+  "cmTC_88844.dir\Debug\cmTC_88844.tlog\" 디렉터리를 만들고 있습니다.
+InitializeBuildStatus:
+  "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_88844.dir\Debug\cmTC_88844.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_88844.dir\Debug\\" /Fd"cmTC_88844.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\feature_tests.cxx"
+  x86용 Microsoft (R) C/C++ 최적화 컴파일러 버전 18.00.40629
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_88844.dir\Debug\\" /Fd"cmTC_88844.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\feature_tests.cxx"
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_88844.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_88844.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/CMakeFiles/CMakeTmp/Debug/cmTC_88844.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTC_88844.dir\Debug\feature_tests.obj
+  cmTC_88844.vcxproj -> C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\Debug\cmTC_88844.exe
+FinalizeBuildStatus:
+  "cmTC_88844.dir\Debug\cmTC_88844.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+  "cmTC_88844.dir\Debug\cmTC_88844.tlog\cmTC_88844.lastbuildstate"에 연결(touching)하고 있습니다.
+"C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\CMakeTmp\cmTC_88844.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+
+빌드했습니다.
+    경고 0개
+    오류 0개
+
+경과 시간: 00:00:00.66
+
+
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

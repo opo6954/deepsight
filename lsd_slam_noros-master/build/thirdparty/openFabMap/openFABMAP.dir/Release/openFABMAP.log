@@ -1,0 +1,22 @@
+﻿빌드 시작: 2017-06-23 오후 3:41:02
+     1>2 노드의 "D:\@SLAM\lsd_slam_noros-master\build\thirdparty\openFabMap\openFABMAP.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../../lsd_slam /I"../../../build/3rd party/boost_1_56_0" /I"../../../build/3rd party/opencv/include" /I"../../../build/3rd party/opencv/include/opencv" /I"../../../build/3rd party/g2o/include" /I"../../../build/3rd party/g2o/include/EXTERNAL/csparse" /I"../../../thirdparty/eigen-3.2.1" /I../../../thirdparty/Sophus /I../../../thirdparty/openFabMap/include /I"../../../thirdparty/dirent-1.20.1/include" /I../../../lsd_slam/depth_estimation /I../../../lsd_slam/global_mapping /I../../../lsd_slam/io_wrapper /I../../../lsd_slam/model /I../../../lsd_slam/tracking /I../../../lsd_slam/util /nologo /W0 /WX- /MP /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D "NDEBUG;" /D _SECURE_SCL=0 /D "LsdSlam_DIR=\"D:\@SLAM\lsd_slam_noros-master\"" /D WINDOWS /D ENABLE_SSE /D NOMINMAX /D _USE_MATH_DEFINES /D _CRT_SECURE_NO_WARNINGS /D EIGEN_DONT_ALIGN_STATICALLY /D WIN32_LEAN_AND_MEAN /D M_SQRT1_2=0.707106781186547524401 /D M_PI=3.14159265358979323846 /D HAVE_SOLVER_CSPARSE /D HAVE_SOLVER_EIGEN /D HAVE_FABMAP /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /EHsc /MD /GS /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"openFABMAP.dir\Release\\" /Fd"openFABMAP.dir\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  -march=native ..\..\..\thirdparty\openFabMap\src\BOWMSCTrainer.cpp ..\..\..\thirdparty\openFabMap\src\ChowLiuTree.cpp ..\..\..\thirdparty\openFabMap\src\FabMap.cpp
+     1>cl : 명령줄 warning D9002: 알 수 없는 '-march=native' 옵션을 무시합니다.
+     1>cl : 명령줄 warning D9002: 알 수 없는 '-march=native' 옵션을 무시합니다.
+     1>cl : 명령줄 warning D9002: 알 수 없는 '-march=native' 옵션을 무시합니다.
+     1>cl : 명령줄 warning D9002: 알 수 없는 '-march=native' 옵션을 무시합니다.
+         BOWMSCTrainer.cpp
+         ChowLiuTree.cpp
+         FabMap.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../../../lib\openFABMAP.lib" /NOLOGO  /machine:X86 openFABMAP.dir\Release\BOWMSCTrainer.obj
+         openFABMAP.dir\Release\ChowLiuTree.obj
+         openFABMAP.dir\Release\FabMap.obj
+         openFABMAP.vcxproj -> D:\@SLAM\lsd_slam_noros-master\build\thirdparty\openFabMap\../../../lib\openFABMAP.lib
+     1>"D:\@SLAM\lsd_slam_noros-master\build\thirdparty\openFabMap\openFABMAP.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:01.15

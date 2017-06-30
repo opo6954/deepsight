@@ -1,0 +1,72 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lsd_slam", "lsd_slam\lsd_slam.vcxproj", "{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E} = {F20312AF-3348-30DA-BD27-4B9FA027EC6E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openFABMAP", "thirdparty\openFabMap\openFABMAP.vcxproj", "{F20312AF-3348-30DA-BD27-4B9FA027EC6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_app", "apps\slam\sample_app.vcxproj", "{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71} = {DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E} = {F20312AF-3348-30DA-BD27-4B9FA027EC6E}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakePredefinedTargets", "CMakePredefinedTargets", "{1088C2E0-D659-3BBF-9CEF-D30B31C48E85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lsd_slam", "lsd_slam", "{8387FCCA-93C0-37B8-9257-366FE7BD77E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{F997D6C2-14F1-3978-BEA0-C730A9E3AC37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{34361131-5D86-3565-8FDD-8764E8EA1A8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "thirdparty", "thirdparty", "{0E177B17-A944-3029-A783-BDB3E4EDBE80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		Release|Win32 = Release|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.Debug|Win32.Build.0 = Debug|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.Release|Win32.ActiveCfg = Release|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.Release|Win32.Build.0 = Release|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.Debug|Win32.Build.0 = Debug|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.Release|Win32.ActiveCfg = Debug|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.Release|Win32.Build.0 = Debug|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.Debug|Win32.Build.0 = Debug|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.Release|Win32.ActiveCfg = Release|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.Release|Win32.Build.0 = Release|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0E177B17-A944-3029-A783-BDB3E4EDBE80} = {8387FCCA-93C0-37B8-9257-366FE7BD77E0}
+		{F997D6C2-14F1-3978-BEA0-C730A9E3AC37} = {8387FCCA-93C0-37B8-9257-366FE7BD77E0}
+		{34361131-5D86-3565-8FDD-8764E8EA1A8F} = {8387FCCA-93C0-37B8-9257-366FE7BD77E0}
+		{F20312AF-3348-30DA-BD27-4B9FA027EC6E} = {0E177B17-A944-3029-A783-BDB3E4EDBE80}
+		{EC7B37C2-9DCB-3FAE-B7F1-66C020C9A1FC} = {F997D6C2-14F1-3978-BEA0-C730A9E3AC37}
+		{DDC5B712-6D2C-388E-B9F9-58DBCAF93B71} = {34361131-5D86-3565-8FDD-8764E8EA1A8F}
+	EndGlobalSection
+EndGlobal

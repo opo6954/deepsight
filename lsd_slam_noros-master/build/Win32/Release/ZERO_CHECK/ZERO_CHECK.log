@@ -1,0 +1,13 @@
+﻿빌드 시작: 2017-06-23 오후 3:02:57
+     1>2 노드의 "D:\@SLAM\lsd_slam_noros-master\build\ZERO_CHECK.vcxproj" 프로젝트(Build 대상)입니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\thirdparty\openFabMap\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\lsd_slam\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(993,5): error MSB3191: "C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\" 디렉터리를 만들 수 없습니다. 'C:\Users\ChurWoong\Desktop\lsd_slam_noros-master\build\apps\slam\CMakeFiles\' 경로에 대한 액세스가 거부되었습니다.
+     1>"D:\@SLAM\lsd_slam_noros-master\build\ZERO_CHECK.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.01

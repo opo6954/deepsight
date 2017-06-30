@@ -1,0 +1,11 @@
+﻿빌드 시작: 2017-06-23 오후 2:32:19
+     1>2 노드의 "D:\@SLAM\lsd_slam_noros-master\build\ALL_BUILD.vcxproj" 프로젝트(Build 대상)입니다.
+     1>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project 'C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/lsd_slam/lsd_slam.vcxproj' does not exist.
+     1>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project 'C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/thirdparty/openFabMap/openFABMAP.vcxproj' does not exist.
+     1>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project 'C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/apps/slam/sample_app.vcxproj' does not exist.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.Cpp.Platform.targets(44,5): error MSB8020: The builds tools for v120 (Platform Toolset = 'v120') cannot be found. To build using the v120 build tools, either click the Project menu or right-click the solution, and then select "Update VC++ Projects...". Install v120 to build using the v120 build tools.
+     1>"D:\@SLAM\lsd_slam_noros-master\build\ALL_BUILD.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.00
