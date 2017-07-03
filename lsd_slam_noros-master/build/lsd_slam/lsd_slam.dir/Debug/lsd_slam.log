@@ -1,10 +1,32 @@
-﻿빌드 시작: 2017-06-27 오후 5:19:53
-     1>2 노드의 "D:\@SLAM\lsd_slam_noros-master\build\lsd_slam\lsd_slam.vcxproj" 프로젝트(Build 대상)입니다.
+﻿빌드 시작: 2017-07-03 오전 11:26:43
+     1>2 노드의 "D:\@SLAM\1implementation\deepsight\lsd_slam_noros-master\build\lsd_slam\lsd_slam.vcxproj" 프로젝트(Build 대상)입니다.
      1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1430,5): warning : The referenced project 'C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/thirdparty/openFabMap/openFABMAP.vcxproj' does not exist.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../lsd_slam /I"../../build/3rd party/boost_1_56_0" /I"../../build/3rd party/opencv/include" /I"../../build/3rd party/opencv/include/opencv" /I"../../build/3rd party/g2o/include" /I"../../build/3rd party/g2o/include/EXTERNAL/csparse" /I"../../thirdparty/eigen-3.2.1" /I../../thirdparty/Sophus /I../../thirdparty/openFabMap/include /I"../../thirdparty/dirent-1.20.1/include" /I../../lsd_slam/depth_estimation /I../../lsd_slam/global_mapping /I../../lsd_slam/io_wrapper /I../../lsd_slam/model /I../../lsd_slam/tracking /I../../lsd_slam/util /Zi /nologo /W0 /WX- /MP /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "LsdSlam_DIR=\"D:\@SLAM\lsd_slam_noros-master\"" /D WINDOWS /D ENABLE_SSE /D NOMINMAX /D _USE_MATH_DEFINES /D _CRT_SECURE_NO_WARNINGS /D EIGEN_DONT_ALIGN_STATICALLY /D WIN32_LEAN_AND_MEAN /D M_SQRT1_2=0.707106781186547524401 /D M_PI=3.14159265358979323846 /D HAVE_SOLVER_CSPARSE /D HAVE_SOLVER_EIGEN /D HAVE_FABMAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"lsd_slam.dir\Debug\\" /Fd"lsd_slam.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\lsd_slam\util\settings.cc
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../lsd_slam /I"../../build/3rd party/boost_1_56_0" /I"../../build/3rd party/opencv/include" /I"../../build/3rd party/opencv/include/opencv" /I"../../build/3rd party/g2o/include" /I"../../build/3rd party/g2o/include/EXTERNAL/csparse" /I"../../thirdparty/eigen-3.2.1" /I../../thirdparty/Sophus /I../../thirdparty/openFabMap/include /I"../../thirdparty/dirent-1.20.1/include" /I../../lsd_slam/depth_estimation /I../../lsd_slam/global_mapping /I../../lsd_slam/io_wrapper /I../../lsd_slam/model /I../../lsd_slam/tracking /I../../lsd_slam/util /Zi /nologo /W0 /WX- /MP /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "LsdSlam_DIR=\"D:\@SLAM\lsd_slam_noros-master\"" /D WINDOWS /D ENABLE_SSE /D NOMINMAX /D _USE_MATH_DEFINES /D _CRT_SECURE_NO_WARNINGS /D EIGEN_DONT_ALIGN_STATICALLY /D WIN32_LEAN_AND_MEAN /D M_SQRT1_2=0.707106781186547524401 /D M_PI=3.14159265358979323846 /D HAVE_SOLVER_CSPARSE /D HAVE_SOLVER_EIGEN /D HAVE_FABMAP /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"lsd_slam.dir\Debug\\" /Fd"lsd_slam.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\lsd_slam\depth_estimation\depth_map.cc ..\..\lsd_slam\depth_estimation\depth_map_pixel_hypothesis.cc ..\..\lsd_slam\global_mapping\fab_map.cc ..\..\lsd_slam\global_mapping\g2o_type_sim3_sophus.cc ..\..\lsd_slam\global_mapping\key_frame_graph.cc ..\..\lsd_slam\global_mapping\trackable_key_frame_search.cc ..\..\lsd_slam\io_wrapper\ImageDisplay_OpenCV.cc ..\..\lsd_slam\io_wrapper\timestamp.cc ..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp ..\..\lsd_slam\model\frame.cc ..\..\lsd_slam\model\frame_memory.cc ..\..\lsd_slam\model\frame_pose_struct.cc ..\..\lsd_slam\tracking\least_squares.cc ..\..\lsd_slam\tracking\relocalizer.cc ..\..\lsd_slam\tracking\se3_tracker.cc ..\..\lsd_slam\tracking\sim3_tracker.cc ..\..\lsd_slam\tracking\tracking_reference.cc ..\..\lsd_slam\util\global_funcs.cc ..\..\lsd_slam\util\settings.cc ..\..\lsd_slam\util\sophus_util.cc ..\..\lsd_slam\util\undistorter.cc ..\..\lsd_slam\live_slam_wrapper.cc ..\..\lsd_slam\slam_system.cc
+         depth_map.cc
+         depth_map_pixel_hypothesis.cc
+         fab_map.cc
+         g2o_type_sim3_sophus.cc
+         key_frame_graph.cc
+         trackable_key_frame_search.cc
+         ImageDisplay_OpenCV.cc
+         timestamp.cc
+         OpenCVImageStreamThread.cpp
+         frame.cc
+         frame_memory.cc
+         frame_pose_struct.cc
+         least_squares.cc
+         relocalizer.cc
+         se3_tracker.cc
+         sim3_tracker.cc
+         tracking_reference.cc
+         global_funcs.cc
          settings.cc
+         sophus_util.cc
+         undistorter.cc
+         live_slam_wrapper.cc
+         slam_system.cc
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"../../lib\lsd_slam_d.lib" /NOLOGO  /machine:X86 lsd_slam.dir\Debug\depth_map.obj
          lsd_slam.dir\Debug\depth_map_pixel_hypothesis.obj
@@ -29,9 +51,9 @@
          lsd_slam.dir\Debug\undistorter.obj
          lsd_slam.dir\Debug\live_slam_wrapper.obj
          lsd_slam.dir\Debug\slam_system.obj
-         lsd_slam.vcxproj -> D:\@SLAM\lsd_slam_noros-master\build\lsd_slam\../../lib\lsd_slam_d.lib
-     1>"D:\@SLAM\lsd_slam_noros-master\build\lsd_slam\lsd_slam.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+         lsd_slam.vcxproj -> D:\@SLAM\1implementation\deepsight\lsd_slam_noros-master\build\lsd_slam\../../lib\lsd_slam_d.lib
+     1>"D:\@SLAM\1implementation\deepsight\lsd_slam_noros-master\build\lsd_slam\lsd_slam.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:01.26
+경과 시간: 00:01:53.15
