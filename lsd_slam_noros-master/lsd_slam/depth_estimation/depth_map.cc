@@ -1237,6 +1237,9 @@ void DepthMap::invalidate()
 
 void DepthMap::createKeyFrame(Frame* new_keyframe)
 {
+#ifdef DEBUGBYLHW
+	std::cout << "Inside createKeyFrame..." << std::endl;
+#endif
 	assert(isValid());
 	assert(new_keyframe != nullptr);
 	assert(new_keyframe->hasTrackingParent());

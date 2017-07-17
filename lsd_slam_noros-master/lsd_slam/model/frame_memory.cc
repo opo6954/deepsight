@@ -122,7 +122,7 @@ void FrameMemory::returnBuffer(void* buffer)
 
 void* FrameMemory::allocateBuffer(unsigned int size)
 {
-	//printf("allocateFloatBuffer(%d)\n", size);
+	printf("allocateFloatBuffer(%d)\n", size);
 	
 	//void* buffer = (void*)(new char[size]);
 	void* buffer = Eigen::internal::aligned_malloc(sizeof(char)*size);

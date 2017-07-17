@@ -93,6 +93,7 @@
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LsdSlam_DIR="D:\@SLAM\lsd_slam_noros-master";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -226,7 +227,6 @@
     <ClInclude Include="..\..\lsd_slam\io_wrapper\image_display.h" />
     <ClInclude Include="..\..\lsd_slam\io_wrapper\input_image_stream.h" />
     <ClInclude Include="..\..\lsd_slam\io_wrapper\notify_buffer.h" />
-    <ClInclude Include="..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.h" />
     <ClInclude Include="..\..\lsd_slam\io_wrapper\output_3d_wrapper.h" />
     <ClInclude Include="..\..\lsd_slam\io_wrapper\timestamp.h" />
     <ClInclude Include="..\..\lsd_slam\io_wrapper\timestamped_object.h" />
@@ -255,7 +255,6 @@
     <ClCompile Include="..\..\lsd_slam\global_mapping\trackable_key_frame_search.cc" />
     <ClCompile Include="..\..\lsd_slam\io_wrapper\ImageDisplay_OpenCV.cc" />
     <ClCompile Include="..\..\lsd_slam\io_wrapper\timestamp.cc" />
-    <ClCompile Include="..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp" />
     <ClCompile Include="..\..\lsd_slam\model\frame.cc" />
     <ClCompile Include="..\..\lsd_slam\model\frame_memory.cc" />
     <ClCompile Include="..\..\lsd_slam\model\frame_pose_struct.cc" />

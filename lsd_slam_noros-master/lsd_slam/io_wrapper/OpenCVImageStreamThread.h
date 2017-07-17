@@ -34,14 +34,24 @@
 #include <cv.h>
 #include <highgui.h>
 
+using namespace cv;
+using namespace std;
+
+
 namespace lsd_slam
 {
 
 
-
+	 
 /**
  * Image stream provider using ROS messages.
  */
+
+	enum CAMERA_TEST_MODE
+	{
+		LIVE_CAM_MODE, STATIC_SEQUENCE_MODE, STATIC_VIDEO_MODE
+	};
+
 class OpenCVImageStreamThread : public InputImageStream
 {
 public: 
@@ -54,8 +64,20 @@ public:
 	void run();
 	
 	void setCalibration(std::string file);
+	
+	//어느 모드로 할 지 이 부분에서 설정
+	void setCameraMode(CAMERA_TEST_MODE _cm);
 
-	void setCameraCapture(CvCapture* cap);
+
+
+	void setCameraInfo(std::string seqFileRootName, std::string seqFileMetaFileName, std::string seqTimeName);
+	void setCameraInfo(int camDeviceNum);
+	void setCameraInfo(std::string videoFileName);
+
+
+
+
+
 	/**
 	 * Thread main function.
 	 */
@@ -67,17 +89,15 @@ public:
 
 private:
 
+	CAMERA_TEST_MODE cm;
 	bool haveCalib;
 	Undistorter* undistorter;
+	VideoCapture vc;
 
-	//ros::NodeHandle nh_;
-
-	//std::string vid_channel;
-	//ros::Subscriber vid_sub;
+	std::vector<Mat> imgSeq;
+	std::vector<double> timeStamp;
 
 	int lastSEQ;
-
-	CvCapture* capture;
 };
 
 }

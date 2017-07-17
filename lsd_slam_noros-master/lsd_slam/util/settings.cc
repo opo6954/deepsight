@@ -36,7 +36,7 @@ int debugDisplay = 0;
 
 bool onSceenInfoDisplay = true;
 bool displayDepthMap = true;
-bool dumpMap = false;
+bool dumpMap = true;
 bool doFullReConstraintTrack = false;
 
 // dyn config
@@ -50,13 +50,13 @@ bool printLineStereoFails = false;
 
 bool printTrackingIterationInfo = false;
 
-bool printFrameBuildDebugInfo = false;
-bool printMemoryDebugInfo = false;
+bool printFrameBuildDebugInfo = true;
+bool printMemoryDebugInfo = true;
 
-bool printKeyframeSelectionInfo = false;
-bool printConstraintSearchInfo = false;
-bool printOptimizationInfo = false;
-bool printRelocalizationInfo = false;
+bool printKeyframeSelectionInfo = true;
+bool printConstraintSearchInfo = true;
+bool printOptimizationInfo = true;
+bool printRelocalizationInfo = true;
 
 bool printThreadingInfo = true;
 bool printMappingTiming = true;
@@ -65,7 +65,7 @@ bool printOverallTiming = true;
 bool plotTrackingIterationInfo = false;
 bool plotSim3TrackingIterationInfo = false;
 bool plotStereoImages = false;
-bool plotTracking = false;
+bool plotTracking = true;
 
 
 float freeDebugParam1 = 1;
@@ -103,10 +103,10 @@ float relocalizationTH = 0.7;
 
 
 bool saveKeyframes =  true;
-bool saveAllTracked = false;
-bool saveLoopClosureImages = false;
-bool saveAllTrackingStages = false;
-bool saveAllTrackingStagesInternal = false;
+bool saveAllTracked = true;
+bool saveLoopClosureImages = true;
+bool saveAllTrackingStages = true;
+bool saveAllTrackingStagesInternal = true;
 
 bool continuousPCOutput = false;
 
@@ -115,7 +115,7 @@ bool fullResetRequested = false;
 bool manualTrackingLossIndicated = false;
 
 
-std::string packagePath = "D:/power/";
+std::string packagePath = "../../../debugOutput";
 
 
 void handleKey(char k)

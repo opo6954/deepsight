@@ -37,9 +37,6 @@
     <ClCompile Include="..\..\lsd_slam\live_slam_wrapper.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\lsd_slam\tracking\relocalizer.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -118,9 +115,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\lsd_slam\io_wrapper\notify_buffer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\lsd_slam\io_wrapper\output_3d_wrapper.h">

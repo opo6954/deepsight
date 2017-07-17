@@ -837,13 +837,13 @@ void SE3Tracker::calcResidualAndBuffers_debugFinish(int w)
 	{
 		char charbuf[500];
 
-		snprintf(charbuf,500,"save/%sresidual-%d-%d.png",packagePath.c_str(),w,iterationNumber);
+		snprintf(charbuf,500,"%s/save/residual-%d-%d.png",packagePath.c_str(),w,iterationNumber);
 		cv::imwrite(charbuf,debugImageResiduals);
 
-		snprintf(charbuf,500,"save/%swarped-%d-%d.png",packagePath.c_str(),w,iterationNumber);
+		snprintf(charbuf,500,"%s/save/warped-%d-%d.png",packagePath.c_str(),w,iterationNumber);
 		cv::imwrite(charbuf,debugImageOldImageWarped);
 
-		snprintf(charbuf,500,"save/%sweights-%d-%d.png",packagePath.c_str(),w,iterationNumber);
+		snprintf(charbuf,500,"%s/save/weights-%d-%d.png",packagePath.c_str(),w,iterationNumber);
 		cv::imwrite(charbuf,debugImageWeights);
 
 		printf("saved three images for lvl %d, iteration %d\n",w,iterationNumber);

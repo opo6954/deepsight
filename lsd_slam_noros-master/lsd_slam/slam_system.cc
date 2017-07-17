@@ -469,13 +469,27 @@ void SlamSystem::createNewCurrentKeyframe(std::shared_ptr<Frame> newKeyframeCand
 	if(SLAMEnabled)
 	{
 		// add NEW keyframe to id-lookup
+#ifdef DEBUGBYLHW
+		std::cout << "In the SLAMEnabled..." << std::endl;
+#endif
 		keyFrameGraph->idToKeyFrameMutex.lock();
+		
 		keyFrameGraph->idToKeyFrame.insert(std::make_pair(newKeyframeCandidate->id(), newKeyframeCandidate));
+#ifdef DEBUGBYLHW
+		std::cout << "Insert KeyFrame on Graph..." << std::endl;
+#endif
+
 		keyFrameGraph->idToKeyFrameMutex.unlock();
 	}
 
 	// propagate & make new.
+#ifdef DEBUGBYLHW
+	std::cout << "Before create ekeyframe..." << std::endl;
+#endif
 	map->createKeyFrame(newKeyframeCandidate.get());
+#ifdef DEBUGBYLHW
+	std::cout << "After create ekeyframe..." << std::endl;
+#endif
 
 	if(printPropagationStatistics)
 	{
@@ -695,9 +709,6 @@ void SlamSystem::debugDisplayDepthMap()
 	
 	if (displayDepthMap)
 		Util::displayImage( "DebugWindow DEPTH", map->debugImageDepth, false );
-
-	int pressedKey = Util::waitKey(10);
-	handleKey(pressedKey);
 }
 
 
@@ -768,7 +779,7 @@ bool SlamSystem::doMappingIteration()
 
 	if(dumpMap)
 	{
-		keyFrameGraph->dumpMap(packagePath+"save");
+		keyFrameGraph->dumpMap(packagePath+"/save");
 		dumpMap = false;
 	}
 

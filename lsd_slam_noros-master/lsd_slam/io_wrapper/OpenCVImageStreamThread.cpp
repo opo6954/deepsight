@@ -26,7 +26,7 @@
 
 //#include "cv_bridge/cv_bridge.h"
 #include "util/settings.h"
-
+ 
 #include <iostream>
 #include <fstream>
 #include <ctime>
@@ -35,162 +35,189 @@ namespace lsd_slam
 {
 
 
-using namespace cv;
+	using namespace cv;
 
-OpenCVImageStreamThread::OpenCVImageStreamThread()
-{
-	// subscribe
-	//vid_channel = nh_.resolveName("image");
-	//vid_sub = nh_.subscribe(vid_channel, 1, &OpenCVImageStreamThread::vidCb, this);
-	 
-
-	// wait for cam calib
-	width_ = height_ = 0;
-
-	// imagebuffer
-	imageBuffer = new NotifyBuffer<TimestampedMat>(8);
-	undistorter = 0;
-	lastSEQ = 0;
-
-	haveCalib = false;
-	undistorter = 0;
-
-}
-
-OpenCVImageStreamThread::~OpenCVImageStreamThread()
-{
-	delete imageBuffer;
-}
-
-void OpenCVImageStreamThread::setCameraCapture(CvCapture* cap)
-{
-	capture = cap;
-}
-
-void OpenCVImageStreamThread::setCalibration(std::string file)
-{
-	if(file == "")
+	OpenCVImageStreamThread::OpenCVImageStreamThread()
 	{
-		printf("NO camera calibration file!\n");
+		// wait for cam calib
+		width_ = height_ = 0;
+
+
+		// imagebuffer
+		imageBuffer = new NotifyBuffer<TimestampedMat>(8);
+		undistorter = 0;
+		lastSEQ = 0;
+
+		haveCalib = false;
+		undistorter = 0;
+
+		//기본을 카메라 모드로 설정
+		cm = lsd_slam::LIVE_CAM_MODE;
 	}
-	else
-	{
-		undistorter = Undistorter::getUndistorterForFile(file.c_str());
 
-		if(!undistorter)
+	OpenCVImageStreamThread::~OpenCVImageStreamThread()
+	{
+		delete imageBuffer;
+	}
+
+	void OpenCVImageStreamThread::setCalibration(std::string file)
+	{
+		if (file == "")
 		{
-			printf("Failed to read camera calibration from file... wrong syntax?\n");
-			assert("Failed to read camera calibration from file... wrong syntax?");
-		}
-
-		fx_ = undistorter->getK().at<double>(0, 0);
-		fy_ = undistorter->getK().at<double>(1, 1);
-		cx_ = undistorter->getK().at<double>(2, 0);
-		cy_ = undistorter->getK().at<double>(2, 1);
-
-		width_ = undistorter->getOutputWidth();
-		height_ = undistorter->getOutputHeight();
-	}
-
-	haveCalib = true;
-}
-
-void OpenCVImageStreamThread::run()
-{
-	boost::thread thread(boost::ref(*this));
-}
-
-void OpenCVImageStreamThread::operator()()
-{
-	//ros::spin();
-	if (!haveCalib)
-	{
-		assert("no calibration");
-		return;
-	}
-	if (!capture)
-	{
-		assert("NO valid camera capture pointer");
-		return;
-	}
-	//요 부분이 사실상 image stream이 돌아가는 부분일 듯...
-	while (1)
-	{
-		TimestampedMat bufferItem;
-		bufferItem.timestamp = Timestamp::now();
-		IplImage* frame = cvQueryFrame(capture);
-		if (undistorter != 0)
-		{
-			assert(undistorter->isValid());
-			undistorter->undistort(frame, bufferItem.data);
+			printf("NO camera calibration file!\n");
 		}
 		else
 		{
-			bufferItem.data = frame;
+			undistorter = Undistorter::getUndistorterForFile(file.c_str());
+
+			if (!undistorter)
+			{
+				printf("Failed to read camera calibration from file... wrong syntax?\n");
+				assert("Failed to read camera calibration from file... wrong syntax?");
+				return;
+			}
+
+			fx_ = undistorter->getK().at<double>(0, 0);
+			fy_ = undistorter->getK().at<double>(1, 1);
+			cx_ = undistorter->getK().at<double>(2, 0);
+			cy_ = undistorter->getK().at<double>(2, 1);
+
+			width_ = undistorter->getOutputWidth();
+			height_ = undistorter->getOutputHeight();
 		}
-		//bufferItem.data = cv::Mat(frame, true);
-		imageBuffer->pushBack(bufferItem);
+		haveCalib = true;
 	}
-	exit(0);
-}
 
 
-//void OpenCVImageStreamThread::vidCb(const sensor_msgs::ImageConstPtr img)
-//{
-//	if(!haveCalib) return;
-//
-//	cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(img, sensor_msgs::image_encodings::MONO8);
-//
-//	if(img->header.seq < (unsigned int)lastSEQ)
-//	{
-//		printf("Backward-Jump in SEQ detected, but ignoring for now.\n");
-//		lastSEQ = 0;
-//		return;
-//	}
-//	lastSEQ = img->header.seq;
-//
-//	TimestampedMat bufferItem;
-//	if(img->header.stamp.toSec() != 0)
-//		bufferItem.timestamp =  Timestamp(img->header.stamp.toSec());
-//	else
-//		bufferItem.timestamp =  Timestamp(ros::Time::now().toSec());
-//
-//	if(undistorter != 0)
-//	{
-//		assert(undistorter->isValid());
-//		undistorter->undistort(cv_ptr->image,bufferItem.data);
-//	}
-//	else
-//	{
-//		bufferItem.data = cv_ptr->image;
-//	}
-//
-//	imageBuffer->pushBack(bufferItem);
-//}
-//
-//void OpenCVImageStreamThread::infoCb(const sensor_msgs::CameraInfoConstPtr info)
-//{
-//	if(!haveCalib)
-//	{
-//		fx_ = info->P[0];
-//		fy_ = info->P[5];
-//		cx_ = info->P[2];
-//		cy_ = info->P[6];
-//
-//		if(fx_ == 0 || fy_==0)
-//		{
-//			printf("camera calib from P seems wrong, trying calib from K\n");
-//			fx_ = info->K[0];
-//			fy_ = info->K[4];
-//			cx_ = info->K[2];
-//			cy_ = info->K[5];
-//		}
-//
-//		width_ = info->width;
-//		height_ = info->height;
-//
-//		printf("Received ROS Camera Calibration: fx: %f, fy: %f, cx: %f, cy: %f @ %dx%d\n",fx_,fy_,cx_,cy_,width_,height_);
-//	}
-//}
+	void OpenCVImageStreamThread::setCameraMode(CAMERA_TEST_MODE _cm)
+	{
+		cm = _cm;
+	}
 
+	//camera info for sequence file
+	void OpenCVImageStreamThread::setCameraInfo(std::string seqFileRootName, std::string seqFileMetaFileName, std::string seqTimeName)
+	{
+		//추후 구현...d
+	}
+	//camera info for webcam(device ID: 0)
+	void OpenCVImageStreamThread::setCameraInfo(int camDevice)
+	{
+		if (haveCalib == false)
+		{
+			std::cout << "It needs calibration.." << std::endl;
+			return;
+		}
+
+		
+		vc.set(CV_CAP_PROP_FRAME_WIDTH, width());
+		vc.set(CV_CAP_PROP_FRAME_HEIGHT, height());
+		
+		vc.open(camDevice);
+	}
+	//camera info for static video file
+	void OpenCVImageStreamThread::setCameraInfo(std::string videoFileName)
+	{
+		vc.open(videoFileName);
+	}
+
+
+	void OpenCVImageStreamThread::run()
+	{
+		boost::thread thread(boost::ref(*this));
+	}
+
+	void OpenCVImageStreamThread::operator()()
+	{
+		//ros::spin();
+		if (!haveCalib)
+		{
+			assert("no calibration");
+			return;
+		}
+		if (!vc.isOpened())
+		{
+			assert("NO valid camera capture pointer");
+			return;
+		}
+		//요 부분이 사실상 image stream이 돌아가는 부분일 듯...
+
+		bool isLoopEnd = false;
+
+		while (isLoopEnd == false)
+		{
+			//webcam으로 live에서 받을 시
+
+			switch (cm)
+			{
+			case lsd_slam::LIVE_CAM_MODE:
+			{	
+				TimestampedMat bufferItem;
+
+				bufferItem.timestamp = Timestamp::now();
+
+				Mat frame;
+
+				vc >> frame;
+				
+				
+
+				if (frame.empty() == true)
+				{
+					isLoopEnd = true;
+					break;
+				}
+
+				if (undistorter != 0)
+				{
+					assert(undistorter->isValid());
+					undistorter->undistort(frame, bufferItem.data);
+				}
+				else
+				{
+					bufferItem.data = frame;
+				}
+				imageBuffer->pushBack(bufferItem);
+				break;
+			}
+
+			case lsd_slam::STATIC_SEQUENCE_MODE:
+				break;
+			case lsd_slam::STATIC_VIDEO_MODE:
+			{
+				
+				
+				TimestampedMat bufferItem;
+
+				bufferItem.timestamp = Timestamp::now();
+
+				Mat frame;
+
+				vc >> frame;
+
+
+
+				if (frame.empty() == true)
+				{
+					isLoopEnd = true;
+					break;
+				}
+
+				if (undistorter != 0)
+				{
+					assert(undistorter->isValid());
+					undistorter->undistort(frame, bufferItem.data);
+				}
+				else
+				{
+					bufferItem.data = frame;
+				}
+				imageBuffer->pushBack(bufferItem);
+				break;
+			}
+				break;
+			default:
+				break;
+			}
+		}
+	}
 }

@@ -104,6 +104,7 @@
       <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion)$(Configuration).pdb</ProgramDataBaseFileName>
       <CallingConvention>Cdecl</CallingConvention>
       <SDLCheck>true</SDLCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;LsdSlam_DIR=\"C:/Users/ChurWoong/Desktop/lsd_slam_noros-master\";WINDOWS;ENABLE_SSE;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;EIGEN_DONT_ALIGN_STATICALLY;WIN32_LEAN_AND_MEAN;M_SQRT1_2=0.707106781186547524401;M_PI=3.14159265358979323846;HAVE_SOLVER_CSPARSE;HAVE_SOLVER_EIGEN;HAVE_FABMAP;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -276,6 +277,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\%40SLAM\1implementation\deepsight\lsd_slam_noros-master\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp" />
     <ClCompile Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\DebugOutput3DWrapper.cpp" />
     <ClCompile Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\sample_app.cc" />
   </ItemGroup>
@@ -288,6 +290,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\%40SLAM\1implementation\deepsight\lsd_slam_noros-master\lsd_slam\io_wrapper\OpenCVImageStreamThread.h" />
     <ClInclude Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\DebugOutput3DWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

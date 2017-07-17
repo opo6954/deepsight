@@ -42,6 +42,8 @@ namespace lsd_slam
 
 
 
+#define DEBUGBYLHW
+
 #define enablePrintDebugInfo true
 
 

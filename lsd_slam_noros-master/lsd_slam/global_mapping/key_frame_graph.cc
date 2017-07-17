@@ -122,8 +122,9 @@ void KeyFrameGraph::dumpMap(std::string folder)
 
 	keyframesAllMutex.lock_shared();
 	char buf[100];
-	int succ = system(("rmdir /s /p "+folder).c_str());
-	succ += system(("mkdir "+folder).c_str());
+	
+	
+	
 
 	for(unsigned int i=0;i<keyframesAll.size();i++)
 	{
@@ -143,7 +144,7 @@ void KeyFrameGraph::dumpMap(std::string folder)
 	if (i > 0)
 		Util::displayImage("VAR PREVIEW", getVarRedGreenPlot(keyframesAll[i]->idepthVar(),keyframesAll[i]->image(),keyframesAll[i]->width(),keyframesAll[i]->height()));
 
-	printf("DUMP MAP (succ %d): dumped %d depthmaps\n", succ,  (int)keyframesAll.size());
+	printf("DUMP MAP (succ %d): dumped %d depthmaps\n", 0,  (int)keyframesAll.size());
 
 	Eigen::MatrixXf res, resD, resP, huber, usage, consistency, distance, error;
 	Eigen::VectorXf meanRootInformation, usedPixels;
