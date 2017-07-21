@@ -57,7 +57,7 @@ DebugOutput3DWrapper::DebugOutput3DWrapper(int width, int height)
 	pose_channel = nh_.resolveName("lsd_slam/pose");
 	pose_publisher = nh_.advertise<geometry_msgs::PoseStamped>(pose_channel,1);*/
 
-	tracker_display = cv::Mat::ones(640, 480, CV_8UC1);
+	tracker_display = cv::Mat::ones(width, height, CV_8UC1);
 	cv::circle(tracker_display, cv::Point(100,100), 20, cv::Scalar(0, 255, 0));
 	cv::imshow("Tracking_output", tracker_display);
 	cvWaitKey(0);
@@ -164,7 +164,7 @@ void DebugOutput3DWrapper::publishTrackedFrame(Frame* kf)
 	pose_publisher.publish(pMsg);*/
 
 	
-	cv::circle(tracker_display, cv::Point(320+camToWorld.translation()[0]*640, -240 + camToWorld.translation()[1]*480), 2, cv::Scalar(255, 0, 0),4);
+	cv::circle(tracker_display, cv::Point(320+camToWorld.translation()[0]* width, -240 + camToWorld.translation()[1]*height), 2, cv::Scalar(255, 0, 0),4);
 	cv::imshow("Tracking_output", tracker_display);
 	std::cout << "PublishTrackedKeyframe: " << camToWorld.translation()[0] << " " << camToWorld.translation()[1] << "  " << camToWorld.translation()[2] << std::endl;
 }

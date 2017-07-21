@@ -277,9 +277,9 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\%40SLAM\1implementation\deepsight\lsd_slam_noros-master\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\DebugOutput3DWrapper.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\sample_app.cc" />
+    <ClCompile Include="..\..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.cpp" />
+    <ClCompile Include="..\..\..\apps\slam\DebugOutput3DWrapper.cpp" />
+    <ClCompile Include="..\..\..\apps\slam\sample_app.cc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/ChurWoong/Desktop/lsd_slam_noros-master/build/lsd_slam/lsd_slam.vcxproj">
@@ -290,8 +290,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\..\%40SLAM\1implementation\deepsight\lsd_slam_noros-master\lsd_slam\io_wrapper\OpenCVImageStreamThread.h" />
-    <ClInclude Include="..\..\..\..\..\..\lsd_slam_noros-master\apps\slam\DebugOutput3DWrapper.h" />
+    <ClInclude Include="..\..\..\lsd_slam\io_wrapper\OpenCVImageStreamThread.h" />
+    <ClInclude Include="..\..\..\apps\slam\DebugOutput3DWrapper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
