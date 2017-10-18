@@ -22,7 +22,7 @@ public:
 
     CenterChooser(const Distance& distance) : distance_(distance) {};
 
-    void setDataset(const flann::Matrix<ElementType>& dataset)
+    void setDataset(const ::flann::Matrix<ElementType>& dataset)
     {
     	dataset_ = dataset;
     }
@@ -41,7 +41,7 @@ public:
 	virtual void operator()(int k, int* indices, int indices_length, int* centers, int& centers_length) = 0;
 
 protected:
-	flann::Matrix<ElementType> dataset_;
+	::flann::Matrix<ElementType> dataset_;
 	Distance distance_;
 };
 

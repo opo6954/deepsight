@@ -360,7 +360,7 @@ class SaveArchive : public OutputArchive<SaveArchive>
 public:
     SaveArchive(const char* filename)
     {
-        stream_ = fopen(filename, "w");
+        fopen_s(&stream_, filename, "w");
         own_stream_ = true;
     }
 
@@ -404,7 +404,7 @@ class LoadArchive : public InputArchive<LoadArchive>
 public:
     LoadArchive(const char* filename)
     {
-        stream_ = fopen(filename, "r");
+        fopen_s(&stream_,filename, "r");
         own_stream_ = true;
     }
 

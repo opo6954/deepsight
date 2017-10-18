@@ -16,9 +16,12 @@
 #include "io_wrapper/OpenCVImageStreamThread.h"
 #include "slam_system.h"
 #include "DebugOutput3DWrapper.h"
+#include "pclVisualizer.h"
+
 
 //#define LIVE_SLAM
-#define STATIC_VIDEO_SLAM
+//#define STATIC_VIDEO_SLAM
+#define PCL_TEST
 
 
 using namespace std;
@@ -35,6 +38,7 @@ std::string liveCalibPath = "../../../data/out_camera_data.xml";
 
 int main(int argc, char** argv) {
 		
+#ifndef PCL_TEST
 	if (argc < 2) {
 		printf(
 			"Usage: sample_app <camera id>\ncamera id is 0 /dev/video0, 1 for /dev/video1 etc.\n");
@@ -42,9 +46,10 @@ int main(int argc, char** argv) {
 	}
 
 	int cameraId = atoi(argv[1]);
-
+	
 
 	cvNamedWindow("Camera_Output_Undist", 1); //Create window
+#endif
 
 #ifdef LIVE_SLAM
 
@@ -74,24 +79,29 @@ int main(int argc, char** argv) {
 	inputStream->run();
 #endif
 
+#ifdef PCL_TEST
+	processor('s');
+	
+
+#else
 	Output3DWrapper* outputWrapper = new DebugOutput3DWrapper(
 		inputStream->width(), inputStream->height());
 	//LiveSLAMWrapper로 input stream하고 outputWrapper(아마 출력을 관리하는 부분일 듯...)
 	LiveSLAMWrapper slamNode(inputStream, outputWrapper);
 
-	
+
 	slamNode.Loop();
 
 	/*
 	if (frame != nullptr)
 	{
-		printf("wh(%d, %d)\n", frame->width, frame->height);
-		cv::Mat mymat = cv::Mat(frame, true);
-		cv::Mat tracker_display = cv::Mat::ones(frame->width, frame->height, CV_8UC3);
-		cv::circle(mymat, cv::Point(100, 100), 20, cv::Scalar(255, 1, 0), 5);
-		cv::imshow("Camera_Output_Undist", mymat);
+	printf("wh(%d, %d)\n", frame->width, frame->height);
+	cv::Mat mymat = cv::Mat(frame, true);
+	cv::Mat tracker_display = cv::Mat::ones(frame->width, frame->height, CV_8UC3);
+	cv::circle(mymat, cv::Point(100, 100), 20, cv::Scalar(255, 1, 0), 5);
+	cv::imshow("Camera_Output_Undist", mymat);
 
-		slamNode.Loop();
+	slamNode.Loop();
 	}
 	*/
 	//Undistorter* undistorter = Undistorter::getUndistorterForFile("out_camera_data.xml");
@@ -121,6 +131,9 @@ int main(int argc, char** argv) {
 
 	//cvDestroyWindow("Camera_Output"); //Destroy Window
 	return 0;
+#endif
+
+	
 
 
 }

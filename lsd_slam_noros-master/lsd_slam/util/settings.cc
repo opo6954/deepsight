@@ -36,7 +36,7 @@ int debugDisplay = 0;
 
 bool onSceenInfoDisplay = true;
 bool displayDepthMap = true;
-bool dumpMap = true;
+bool dumpMap = false;
 bool doFullReConstraintTrack = false;
 
 // dyn config
@@ -50,8 +50,8 @@ bool printLineStereoFails = false;
 
 bool printTrackingIterationInfo = false;
 
-bool printFrameBuildDebugInfo = true;
-bool printMemoryDebugInfo = true;
+bool printFrameBuildDebugInfo = false;
+bool printMemoryDebugInfo = false;
 
 bool printKeyframeSelectionInfo = true;
 bool printConstraintSearchInfo = true;
@@ -65,7 +65,7 @@ bool printOverallTiming = true;
 bool plotTrackingIterationInfo = false;
 bool plotSim3TrackingIterationInfo = false;
 bool plotStereoImages = false;
-bool plotTracking = true;
+bool plotTracking = false;
 
 
 float freeDebugParam1 = 1;

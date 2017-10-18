@@ -126,14 +126,14 @@ struct valid_combination
  * Create index
  **********************************************************/
 template <template<typename> class Index, typename Distance, typename T>
-inline NNIndex<Distance>* create_index_(flann::Matrix<T> data, const flann::IndexParams& params, const Distance& distance,
+inline NNIndex<Distance>* create_index_(::flann::Matrix<T> data, const ::flann::IndexParams& params, const Distance& distance,
 		typename enable_if<valid_combination<Index,Distance,T>::value,void>::type* = 0)
 {
     return new Index<Distance>(data, params, distance);
 }
 
 template <template<typename> class Index, typename Distance, typename T>
-inline NNIndex<Distance>* create_index_(flann::Matrix<T> data, const flann::IndexParams& params, const Distance& distance,
+inline NNIndex<Distance>* create_index_(::flann::Matrix<T> data, const ::flann::IndexParams& params, const Distance& distance,
 		typename disable_if<valid_combination<Index,Distance,T>::value,void>::type* = 0)
 {
     return NULL;

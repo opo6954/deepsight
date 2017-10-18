@@ -136,7 +136,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>../../../lsd_slam;../../../build/3rd party/PCL/include;../../../build/3rd party/vtk-7.1.1/include/;../../../build/3rd party/opencv/include/;../../../build/3rd party/opencv/include/opencv/;../../../build/3rd party/g2o/include/;../../../build/3rd party/g2o/include/EXTERNAL/csparse/;../../../thirdparty/eigen-3.2.1/;../../../thirdparty/Sophus/;../../../thirdparty/openFabMap/include/;../../../thirdparty/dirent-1.20.1/include/;../../../build/3rd party/boost_1_56_0/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../build/apps/slam;../../../lsd_slam;../../../build/3rd party/PCL/include;../../../build/3rd party/vtk-7.1.1/include/;../../../build/3rd party/opencv/include/;../../../build/3rd party/opencv/include/opencv/;../../../build/3rd party/g2o/include/;../../../build/3rd party/g2o/include/EXTERNAL/csparse/;../../../thirdparty/eigen-3.2.1/;../../../thirdparty/Sophus/;../../../thirdparty/openFabMap/include/;../../../thirdparty/dirent-1.20.1/include/;../../../build/3rd party/boost_1_56_0/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>

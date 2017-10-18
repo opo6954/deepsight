@@ -49,6 +49,7 @@ Eigen::Matrix<double, 3, 4> get_projection(Tracker& tracker) {
     intrinsics(1, 1) = cam_params[1];
     intrinsics(0, 2) = cam_params[2];
     intrinsics(1, 2) = cam_params[3];
+	
 
     std::vector<double> rot = tracker.GetCurrentPose();
     Eigen::Matrix<double, 3, 3> mrot;

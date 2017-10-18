@@ -34,7 +34,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
 namespace flann
 {
 
@@ -194,8 +193,9 @@ public:
 
 }
 
-inline void* operator new (std::size_t size, flann::PooledAllocator& allocator)
+inline void* operator new (std::size_t size,  ::flann::PooledAllocator& allocator)
 {
+	
     return allocator.allocateMemory(size) ;
 }
 
